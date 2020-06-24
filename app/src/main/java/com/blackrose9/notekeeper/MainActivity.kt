@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
-import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -13,16 +12,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
-
-        fab.setOnClickListener { view ->
-            val originalValue = textDisplayedValue.text.toString().toInt()
-            val newValue = originalValue * 2
-            textDisplayedValue.text = newValue.toString()
-            Snackbar.make(
-                view, "Value $originalValue changed to $newValue",
-                Snackbar.LENGTH_LONG
-            ).show()
-        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
