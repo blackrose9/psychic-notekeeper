@@ -27,26 +27,28 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/text_course_title"
+        android:id="@+id/textNoteTitle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:ems="10"
         android:gravity="start|top"
+        android:hint="Note Title"
         android:inputType="textMultiLine"
         app:layout_constraintEnd_toEndOf="@+id/spinner_courses"
         app:layout_constraintStart_toStartOf="@+id/spinner_courses"
         app:layout_constraintTop_toBottomOf="@+id/spinner_courses" />
 
     <EditText
-        android:id="@+id/text_course_body"
+        android:id="@+id/textNoteText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:ems="10"
         android:gravity="start|top"
+        android:hint="Note Text"
         android:inputType="textMultiLine"
-        app:layout_constraintEnd_toEndOf="@+id/text_course_title"
-        app:layout_constraintStart_toStartOf="@+id/text_course_title"
-        app:layout_constraintTop_toBottomOf="@+id/text_course_title" />
+        app:layout_constraintEnd_toEndOf="@+id/spinner_courses"
+        app:layout_constraintStart_toStartOf="@+id/textNoteTitle"
+        app:layout_constraintTop_toBottomOf="@+id/textNoteTitle" />
 </androidx.constraintlayout.widget.ConstraintLayout>
